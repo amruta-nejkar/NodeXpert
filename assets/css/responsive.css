@@ -1,0 +1,247 @@
+@media (min-width: 320px) and (max-width: 480px){
+  section.banner .container .main_banner {
+    display:block !important;
+}
+.main_banner{
+  display: block;
+}
+.right_side {
+  padding: 21px 0px !important;
+}
+h1.heading {
+    font-size: 28px !important;
+    padding-left: 8px;
+  }
+  p.para {
+    font-size: 13px !important;
+    padding-left: 8px;
+  }
+  img.banner_img {
+    width: 300px !important;
+  }
+  section.banner {
+    height: 425px !important;
+  }
+  section.information {
+    margin-top:-24px !important;
+  }
+  h3.main_heading {
+    padding-left: 8px;
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  p.main_paragraph {
+    font-size: 15px !important;
+    padding-left: 8px;
+  }
+  .cards_wrap {
+    margin-top: 20px !important;
+    padding-left: 25px;
+  }
+  section#expr {
+    margin-top: 20px  !important;
+  }
+  section#expr .container h1 {
+    font-size: 23px !important;
+    padding-left: 8px;
+  }
+  section#expr .container div.cards {
+    
+    display: block !important;
+  }
+  section#expr .container div.cards .card_1 {
+    width: 290px;
+    height: 211px;
+    margin-left: 10px;
+  }
+  section#expr .container div.cards .card_1 h6{
+    padding-top: 12px;
+  }
+  section#banner_two div.container .banner_cont button.join_btn {
+    margin-top: 30px;
+  }
+  section#banner_two div.container .banner_cont h3 {
+    padding: 60px 10px 10px 10px !important;
+    font-size: 23px !important;
+    line-height: 30px !important;
+  }
+  section#touch_div {
+    margin: -92px 0px;
+  }
+  section#touch_div div.container h1 {
+    font-size: 30px !important;
+    padding-left: 8px;
+  }
+  section#touch_div div.container .touch_heading .info form strong {
+    padding-left: 8px;
+  }
+  .name input.full_name {
+    margin-left: 8px;
+    width: 265px !important;
+  }
+  .one_col {
+    display: block !important;
+  }
+  .phone {
+    margin: 0 0 0 8px !important;
+  }
+  .msg textarea {
+    margin-left: 8px;
+    width: 265px !important;
+  }
+  .submit button{
+    margin-left: 8px;
+  }
+  .email_id {
+    margin-top: -23px !important;
+    margin-left: 8px !important;
+  }
+  .touch_heading {
+    display: block !important;
+  }
+  .help {
+    margin-left: 8px !important;
+    margin-top: 17px;
+  }
+  .heading_one h2 {
+    font-size: 20px !important;
+  }
+  .heading_one p {
+    font-size: 15px !important;
+  }
+  .heading_two h3 {
+    margin-top: 15px !important;
+  }
+  .heading_two p {
+    font-size: 15px !important;
+  }
+  .heading_two p img.plus {
+    margin-left: 165px !important;
+  }
+  .heading_two {
+    border-bottom: 1px solid #969BAB;
+    /* width: 290px; */
+  }
+  section#footer {
+    margin-top: 113px !important;
+  }
+  .footer_logo {
+    width: 157px;
+    margin: 10px 10px 0 !important;
+  }
+  .footer_left p {
+    margin-top: 10px !important;
+    margin-left: 8px;
+  }
+  .footer_left img.icon {
+    margin: 17px 18px 0 0 !important;
+    padding-left: 10px;
+  }
+  .footer_contain {
+    /* display: flex; */
+    display: block !important;
+  }
+
+
+
+
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  header .container .header_wrap .logo {
+  
+    margin: 6px 0px 6px 25px;
+   
+}
+ul.nav_bar{
+  position: absolute;
+  left: 0;
+  top: 95px;
+  width: 100%;
+  line-height: 25px;
+  /* display: none; */
+  background-color: rgba(0,0,0,0.6);
+}
+ul .nav_bar li a {
+  color: #e0dede;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 2px solid;
+}
+ ul.nav_bar{
+  flex-direction: column;
+}
+ ul.nav_bar li a{
+  display: block;
+  width: 100%;
+}
+
+  .hambuger{
+    padding-right: 40px;
+    margin-top: 20px;
+
+}
+ .hambuger a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+ .hambuger a span{
+    border-top: 3px solid #131212;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+  .hambuger a span::after{
+    border-top: 3px solid #141414;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:15px;
+}
+ .hambuger a span::before{
+    border-top: 3px solid #181717;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-15px;
+}
+ .hambuger a span::before{
+    top:-15px;
+}
+ .hambuger a span::after{
+    top:8px;
+} 
+.hambuger.openMenu a span::before{  
+    transform: rotate(45deg);
+    top: 0;
+    
+}
+
+.hambuger.openMenu a span{
+    border-top: none; 
+    
+}
+.hambuger.openMenu a span::after{
+    top: 0;
+    transform: rotate(-45deg);
+}    
+  
+.main_banner{
+  /* display: none; */
+}
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

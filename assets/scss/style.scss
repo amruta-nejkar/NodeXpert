@@ -1,0 +1,704 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+  }
+//   start header
+ header{
+    background-color:#FFFFFF;
+    
+    // position: fixed;
+    // left: 0;
+    // right: 0;
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        .header_wrap{
+            display: flex;
+            justify-content: space-between;
+       
+        .logo{
+            margin-top: 10px;
+            img {
+                &.logo_nodeX{
+                        width: 164px;
+            }
+        }
+        }
+        .right_top_head{
+           
+            ul{
+                &.nav_bar{
+                    display: flex;
+                    list-style: none;
+                    
+                    li{
+                        padding: 25px 25px;
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            &:hover{
+                                color:green;
+                            }
+                        
+                            &.btn_header{
+                                border: 1px solid $primary_green;
+											border-radius: 8px;
+											padding: 9px 17px;
+											// margin: 16px 10px 16px 32px;
+											background:$primary_green;
+											border-radius: 8px;
+										text-decoration: none;
+                     					// width: 100px;
+										// height: 40px;
+										font-weight: bold;
+										font-size: 14px;
+										line-height: 20px;
+										align-items: center;
+										color:$primary_white;
+										&:hover{
+											color: $primary_green;
+											background: $primary_white;
+											border: 1px solid $primary_green;	
+										}
+                                    }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    }
+ }
+//  header end
+// start banner section
+ section{
+     &.banner{
+         height: 487px;
+         background-color: $primary_green;
+         .container{
+            max-width: 1140px;
+            margin: 0 auto;
+            .main_banner{
+                display: flex;
+
+                .right_side{
+                    padding: 139px 0px;
+
+                    h1{
+                        &.heading{
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 30px;
+                            line-height: 140%;
+                            color: $primary_white;
+                            // padding-top: 139px;
+                        }
+                    }
+
+                        p{
+                            &.para{
+                                 font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 160%;
+                                color: $primary_white;  
+                                padding-top: 27px;
+
+                                span{
+                                    display: block;
+                                }
+                            }
+                           
+                        }
+                }
+                .left_side{
+                    a{
+                        img{
+
+                            &.banner_img{
+                                width:708px;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+         }
+     }
+ }
+ // end banner section
+//  start section information 
+section{
+    &.information{
+        margin-top: 80px;
+       
+        .container{
+            max-width: 1140px;
+            margin: 0 auto;
+            .sub_info{
+                h3{
+                    &.main_heading{
+                        margin-top: 60px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 54px;
+
+                    }
+                }
+                p{
+                    &.main_paragraph{
+                        margin-top: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 32px;
+
+                    }
+                    span{
+                        display: block;
+                        padding-top: 25px;
+                    }
+                }
+            }
+            //cards section
+            .cards_wrap{
+                margin-top: 68px;
+                display: flex;
+                flex-wrap: wrap;
+                .card{
+                    width: 270px;
+                    height: 182px;
+                    // border: 1px solid gray;
+                    box-shadow: 0px 10px 15px 3px rgba(41, 41, 42, 0.1);
+                    border-radius: 8px;
+                    margin-right: 15px;
+                    margin-bottom: 40px;
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    } 
+                
+                    h3{
+                        &.card_heading{
+                            padding: 40px 24px 0px 32px;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                    }
+                    p{
+                        &.card_information{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 140%;
+                            padding: 8px 24px 40px 32px;
+                            color:  #969BAB;
+
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+// end  section information 
+
+	//exprience
+    section{
+					
+        &#expr{
+             margin-top: 80px;
+            .container{
+                max-width: 1140px;
+                margin: 0 auto;
+                h1{
+                
+                    font-weight: 800;
+                    font-size: 35px;
+                    color:$primary_black;
+                    span{
+                        display: block;
+                    }
+                }
+                div{
+                    &.cards{
+                    
+                        display: flex;
+                        .card_1{
+                                width: 350px;
+                                height: 270px;
+                                background: #FFFFFF;
+                                border-radius: 8px;
+                                margin-right: 30px;
+                                 margin-top: 40px;
+                                box-shadow: 0px 10px 25px 3px #29292a1a;
+                                margin-bottom: 68px;
+                                h6{
+                                    font-weight: bold;
+                                    font-size: 10px;
+                                    color: rgba(24, 25, 31, 0.67);
+                                    margin: 35px 32px 8px;
+
+                                }
+                                h4{
+                                    font-weight: 700;
+                                    font-size: 15px;
+                                    line-height: 26px;
+                                color:$primary_black;
+                                margin: 8px 32px 8px;
+                            }
+                                p{font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #4F4F4F;
+                                    margin: 0 32px 40px;
+                                }
+                                a{
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    color: $primary_green;
+                                    margin:0 32px;
+                                    text-decoration: none;
+        											
+                                }
+                                &:hover{
+                                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                } 
+                                &::after{
+                                    content: url("../images/Vector.svg");
+                                    margin-left: -25px;
+                                    padding: 0px 0px 0px 10px;
+    
+                                }
+                            
+                            }
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+    // 
+    
+				//Banner 2
+				section{
+					//banner id
+					&#banner_two{
+						margin: 64px 0;
+                      
+						div{
+							//container
+							&.container{
+								max-width: 1110px;
+								height:288px;
+								margin: 0 auto;
+								overflow: hidden;
+								border-radius: 30px;
+								background-repeat: no-repeat;
+	
+								background: url(../images/BGMask.png);
+								//banner contain
+								.banner_cont{
+									
+		
+									text-align: center;
+								
+									h3{
+						
+										padding: 43px 293px 32px;
+										font-size: 40px;
+										line-height: 54px;
+										color:$primary_white;
+									}
+									//button
+									button{
+										//class button
+										&.join_btn{
+											width: 240px;
+											height: 62px;
+											background: $primary_white;
+											border-radius: 16px;
+											color: $primary_green;
+											font-weight: bold;
+											font-size: 20px;
+											line-height: 30px;
+											border: 1px solid $primary_green;
+											&:hover{
+												background: $primary_green;
+												color: $primary_white;
+												border: 2px solid $primary_white;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}//Banner 2 end
+
+//get in touch
+section{
+					
+    &#touch_div{
+        margin: 70px 0px;
+        
+        div{
+            
+            &.container{
+                max-width: 1140px;
+                margin: 0 auto;
+                overflow: hidden;
+                
+                h1{
+                    margin: 70px 0 36px;
+                    color: $primary_black;
+                    font-weight: 800;
+                    font-size: 48px;
+                    line-height: 64px;
+                }
+                
+                .touch_heading{
+                    display: flex;
+                    
+                    .info{
+                        form{
+                            strong{
+                                width: 111px;
+                                height: 20px;
+                                color:$primary_black;
+                                font-weight: bold;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 4px;
+                                margin-top: 24px;
+                                }
+                            div{
+                                &.name{
+                                    
+                                    input{
+                                        &.full_name{
+                                            height: 48px;
+                                            width: 560px;
+                                            border-radius: 8px;
+                                            font-weight: normal;
+                                            font-size: 16px;
+                                            line-height: 26px;
+                                            color: #828282;
+                                            border-radius: 3px;
+                                            border: 1px solid #e4e4e4;
+                                            background-color: #f9f9f9;
+                                            padding: 16px;
+                                            }
+                                        }
+                                }
+                                
+                                &.one_col{
+                                    display: flex;
+                                    div{														
+                                    &.phone{
+                                        
+                                        margin: 48px 0 4px -100px;							
+                                        input{
+                                            &.tel{height: 48px;
+                                                width: 268px;
+                                                border-radius: 8px;
+                                                font-weight: normal;
+                                                font-size: 16px;
+                                                line-height: 26px;
+                                                color: #828282;
+                                                border-radius: 3px;
+                                                border: 1px solid #e4e4e4;
+                                                background-color: #f9f9f9;
+                                                padding: 16px;
+                                                margin-bottom: 24px;
+                                                }
+                                            }
+                                    }
+                                    
+                                    &.email_id{
+                                        margin-bottom: 4px;
+                                        margin-top: 26px;
+                                        margin-left: 24px;														
+                                        input{
+                                            &.email{
+                                                height: 48px;
+                                                width: 268px;
+                                                border-radius: 8px;
+                                                font-weight: normal;
+                                                font-size: 16px;
+                                                line-height: 26px;
+                                                color: #828282;
+                                                border-radius: 3px;
+                                            border: 1px solid #e4e4e4;
+                                            background-color: #f9f9f9;
+                                            padding: 16px;
+                                                }
+                                            }
+
+                                    }
+                                }
+                            }
+                            &.msg{
+                                textarea{
+                                    height: 108px;
+                                    width: 560px;
+                                    border-radius: 8px;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                    color: #828282;
+                                    border-radius: 3px;
+                                border: 1px solid #e4e4e4;
+                                background-color: #f9f9f9;
+                                padding: 16px;
+                                margin-top: 4px;	
+                                }
+                            }
+                            
+                            &.submit{
+                                button{
+                                    background: $primary_green;
+                                    color: $primary_white;
+                                    height: 62px;
+                                    width: 135px;
+                                    left: 167px;
+                                    top: 526px;
+                                    border: 1px solid $primary_green;
+                                    border-radius: 8px;
+                                    padding: 16px, 32px, 16px, 32px;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    margin-top: 32px;
+                                    &:hover{
+                                        border: 1px solid $primary_green;
+                                        color: $primary_green;
+                                        background: $primary_white;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                        }
+                    }
+                    //infomation form end
+                    //help
+                    div{
+                        &.help{
+                            margin-left: 80px;
+                            .heading_one{
+                                h2{
+                                    font-weight: bold;
+                                    font-size: 25px;
+                                    line-height: 32px;
+                                    color: $primary_black;
+                                    margin-bottom: 8px;
+                                }
+                                p{font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #969BAB;
+                                    // margin-bottom: 43px;
+                                }
+                            }
+                            .heading_two{
+                                h3{
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 32px;
+                                    color: $primary_black;
+                                    margin-top:37px ;
+                                }
+                                p{
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    color: #969BAB;
+                                    margin-bottom: 12px;
+                                    position: relative;
+                                    img{
+                                        &.plus{
+                                            margin-left: 26px;
+                                            &:hover{
+                                                font-size: 20px;
+                                                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                                            }	
+                                        }
+                                        &:hover{
+                                            font-size: 20px;
+                                            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                                        }
+                                    }
+                                }
+                                &::after{
+                                    content: url(../images/Icon.png);
+                                    position: absolute;
+                                    margin: -36px 0px 0 462px;
+                                }
+                                border-bottom: 1px solid #969BAB;
+                            }
+                            
+                            
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}//get in touch end 
+
+//Footer
+section{
+				
+    &.footer{
+        //width: 1440px;
+        height: 408px;
+        background-color: $primary_black;
+        margin-top: 76px;
+       
+
+        
+    div{
+        &.container{
+            max-width: 1140px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer_contn{
+            display: flex;
+        
+            .footer_left{
+                margin-right: 55px;
+            
+                img{
+                    &.footer_logo{
+                        width: 180px;
+                        height: 63px;
+                        margin: 62px 0 0;
+                        }
+                }
+                p{margin-top: 32px;
+                    width: 281px;
+                    height: 78px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #F8F8F8;
+                    opacity: 0.85;
+                }
+                a{
+                img{
+                    &.icon{
+                        margin: 34px 18px 0 0;
+                    }
+                }
+            }
+                    
+                
+
+            }
+            //footer right
+            .footer_right{
+                width: 855px;
+                
+                margin-top: 86px;
+                
+                //  .footer_heading{
+                //     display: flex;
+                //     color: white;
+                //     //justify-content: space-between;
+                        
+                        h6{
+                            
+                            &.col_one{
+                                width: 116px;
+                                height: 30px;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color:#85868B;
+                            }
+                            
+                            &.col_two{
+                                height: 30px;
+                                width: 110px;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 30px;
+                                // margin-left: 72px;
+                                color:#85868B;
+                            }
+                            
+                            &.col_three{
+                                height: 30px;
+                                width: 130px;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 30px;
+                                // margin-left: 72px;
+                                color:#85868B;
+                            }
+                            
+                            &.col_four{
+                                height: 30px;
+                                width: 110px;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 30px;
+                                // margin-left: 57px;
+                                color:#85868B;
+                            }
+                            
+                        
+                  } 
+                  
+                  .coloumn_h{
+                      display: flex;
+                     
+                  .heading_col{
+                    
+                    color: $primary_white;
+                    
+                    p{
+                        width: 188px;
+                    margin-top:10px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    //line-height: 26px;
+                    //margin-right: 108px;
+                    margin-bottom: 9px;
+                
+                        span {
+                            color:$primary_green;
+                        }
+                    }
+                }
+                }
+                  
+
+            }
+        }
+    }
+    }
+}
