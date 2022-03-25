@@ -16,22 +16,22 @@ header {
         margin-top: 10px; }
         header .container .header_wrap .logo img.logo_nodeX {
           width: 164px; }
-      header .container .header_wrap .right_top_head ul.nav_bar {
+      header .container .header_wrap .right_top_head .menu ul.nav_bar {
         display: flex;
         list-style: none; }
-        header .container .header_wrap .right_top_head ul.nav_bar li {
+        header .container .header_wrap .right_top_head .menu ul.nav_bar li {
           padding: 25px 25px;
           list-style: none; }
-          header .container .header_wrap .right_top_head ul.nav_bar li a {
+          header .container .header_wrap .right_top_head .menu ul.nav_bar li a {
             text-decoration: none;
             color: #000000;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 20px; }
-            header .container .header_wrap .right_top_head ul.nav_bar li a:hover {
+            header .container .header_wrap .right_top_head .menu ul.nav_bar li a:hover {
               color: green; }
-            header .container .header_wrap .right_top_head ul.nav_bar li a.btn_header {
+            header .container .header_wrap .right_top_head .menu ul.nav_bar li a.btn_header {
               border: 1px solid #6EA239;
               border-radius: 8px;
               padding: 9px 17px;
@@ -43,7 +43,7 @@ header {
               line-height: 20px;
               align-items: center;
               color: #FFFFFF; }
-              header .container .header_wrap .right_top_head ul.nav_bar li a.btn_header:hover {
+              header .container .header_wrap .right_top_head .menu ul.nav_bar li a.btn_header:hover {
                 color: #6EA239;
                 background: #FFFFFF;
                 border: 1px solid #6EA239; }
@@ -106,7 +106,8 @@ section.information {
         box-shadow: 0px 10px 15px 3px rgba(41, 41, 42, 0.1);
         border-radius: 8px;
         margin-right: 15px;
-        margin-bottom: 40px; }
+        margin-bottom: 40px;
+        transition-delay: 1s; }
         section.information .container .cards_wrap .card:hover {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
         section.information .container .cards_wrap .card h3.card_heading {
@@ -122,20 +123,20 @@ section.information {
           padding: 8px 24px 40px 32px;
           color: #969BAB; }
 
-section#expr {
+section.expr {
   margin-top: 80px; }
-  section#expr .container {
+  section.expr .container {
     max-width: 1140px;
     margin: 0 auto; }
-    section#expr .container h1 {
+    section.expr .container h1 {
       font-weight: 800;
       font-size: 35px;
       color: #0B0D17; }
-      section#expr .container h1 span {
+      section.expr .container h1 span {
         display: block; }
-    section#expr .container div.cards {
+    section.expr .container div.cards {
       display: flex; }
-      section#expr .container div.cards .card_1 {
+      section.expr .container div.cards .card_1 {
         width: 350px;
         height: 270px;
         background: #FFFFFF;
@@ -143,34 +144,35 @@ section#expr {
         margin-right: 30px;
         margin-top: 40px;
         box-shadow: 0px 10px 25px 3px #29292a1a;
-        margin-bottom: 68px; }
-        section#expr .container div.cards .card_1 h6 {
+        margin-bottom: 68px;
+        transition-delay: 1s; }
+        section.expr .container div.cards .card_1 h6 {
           font-weight: bold;
           font-size: 10px;
           color: rgba(24, 25, 31, 0.67);
           margin: 35px 32px 8px; }
-        section#expr .container div.cards .card_1 h4 {
+        section.expr .container div.cards .card_1 h4 {
           font-weight: 700;
           font-size: 15px;
           line-height: 26px;
           color: #0B0D17;
           margin: 8px 32px 8px; }
-        section#expr .container div.cards .card_1 p {
+        section.expr .container div.cards .card_1 p {
           font-weight: normal;
           font-size: 14px;
           line-height: 20px;
           color: #4F4F4F;
           margin: 0 32px 40px; }
-        section#expr .container div.cards .card_1 a {
+        section.expr .container div.cards .card_1 a {
           font-weight: bold;
           font-size: 18px;
           line-height: 30px;
           color: #6EA239;
           margin: 0 32px;
           text-decoration: none; }
-        section#expr .container div.cards .card_1:hover {
+        section.expr .container div.cards .card_1:hover {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
-        section#expr .container div.cards .card_1::after {
+        section.expr .container div.cards .card_1::after {
           content: url("../images/Vector.svg");
           margin-left: -25px;
           padding: 0px 0px 0px 10px; }
@@ -228,8 +230,9 @@ section#touch_div {
         font-weight: bold;
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 4px;
-        margin-top: 24px; }
+        margin: 24px -9px 4px 0; }
+        section#touch_div div.container .touch_heading .info form strong.mail {
+          padding-left: 23px; }
       section#touch_div div.container .touch_heading .info form div.name input.full_name {
         height: 48px;
         width: 560px;
@@ -246,7 +249,24 @@ section#touch_div {
         display: flex; }
         section#touch_div div.container .touch_heading .info form div.one_col div.phone {
           margin: 48px 0 4px -100px; }
-          section#touch_div div.container .touch_heading .info form div.one_col div.phone input.tel {
+        section#touch_div div.container .touch_heading .info form div.one_col div input.tel {
+          height: 48px;
+          width: 268px;
+          border-radius: 8px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: #828282;
+          border-radius: 3px;
+          border: 1px solid #e4e4e4;
+          background-color: #f9f9f9;
+          padding: 16px;
+          margin-bottom: 24px; }
+        section#touch_div div.container .touch_heading .info form div.one_col .email_id {
+          margin-bottom: 4px;
+          margin-top: 26px;
+          margin-left: 24px; }
+          section#touch_div div.container .touch_heading .info form div.one_col .email_id input.email {
             height: 48px;
             width: 268px;
             border-radius: 8px;
@@ -258,23 +278,7 @@ section#touch_div {
             border: 1px solid #e4e4e4;
             background-color: #f9f9f9;
             padding: 16px;
-            margin-bottom: 24px; }
-        section#touch_div div.container .touch_heading .info form div.one_col div.email_id {
-          margin-bottom: 4px;
-          margin-top: 26px;
-          margin-left: 24px; }
-          section#touch_div div.container .touch_heading .info form div.one_col div.email_id input.email {
-            height: 48px;
-            width: 268px;
-            border-radius: 8px;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            color: #828282;
-            border-radius: 3px;
-            border: 1px solid #e4e4e4;
-            background-color: #f9f9f9;
-            padding: 16px; }
+            margin: 23px 0 0 -105px; }
       section#touch_div div.container .touch_heading .info form div.msg textarea {
         height: 108px;
         width: 560px;
@@ -308,62 +312,55 @@ section#touch_div {
           background: #FFFFFF; }
       section#touch_div div.container .touch_heading div.help {
         margin-left: 80px; }
-        section#touch_div div.container .touch_heading div.help .heading_one h2 {
-          font-weight: bold;
-          font-size: 25px;
-          line-height: 32px;
-          color: #0B0D17;
-          margin-bottom: 8px; }
-        section#touch_div div.container .touch_heading div.help .heading_one p {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 28px;
-          color: #969BAB; }
-        section#touch_div div.container .touch_heading div.help .heading_two {
-          border-bottom: 1px solid #969BAB; }
-          section#touch_div div.container .touch_heading div.help .heading_two h3 {
-            font-weight: 600;
+        section#touch_div div.container .touch_heading div.help details {
+          height: 100px;
+          cursor: pointer;
+          margin: 0 auto;
+          padding: 20px 0;
+          transition: all 0.5s ease-in-out; }
+          section#touch_div div.container .touch_heading div.help details details > summary {
+            list-style: none; }
+          section#touch_div div.container .touch_heading div.help details summary {
+            border-bottom: 2px solid #e0dbd1;
+            display: flex;
             font-size: 20px;
-            line-height: 32px;
-            color: #0B0D17;
-            margin-top: 37px; }
-          section#touch_div div.container .touch_heading div.help .heading_two p {
+            justify-content: space-between;
+            padding: 0 10px 2px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; }
+            section#touch_div div.container .touch_heading div.help details summary::after {
+              padding-left: 10px;
+              content: "+";
+              transform: rotate(0);
+              transition: 0.25s all ease; }
+            section#touch_div div.container .touch_heading div.help details summary details[open] {
+              height: 170px;
+              overflow: hidden; }
+          section#touch_div div.container .touch_heading div.help details p {
+            color: #969BAB;
+            font-style: normal;
             font-weight: 500;
             font-size: 18px;
-            line-height: 28px;
-            color: #969BAB;
-            margin-bottom: 12px;
-            position: relative; }
-            section#touch_div div.container .touch_heading div.help .heading_two p img.plus {
-              margin-left: 26px; }
-              section#touch_div div.container .touch_heading div.help .heading_two p img.plus:hover {
-                font-size: 20px;
-                box-shadow: #26394d 0px 20px 30px -10px; }
-            section#touch_div div.container .touch_heading div.help .heading_two p img:hover {
-              font-size: 20px;
-              box-shadow: #26394d 0px 20px 30px -10px; }
-          section#touch_div div.container .touch_heading div.help .heading_two::after {
-            content: url(../images/Icon.png);
-            position: absolute;
-            margin: -36px 0px 0 462px; }
+            line-height: 28px; }
 
-section.footer {
+footer {
   height: 408px;
   background-color: #0B0D17;
   margin-top: 76px; }
-  section.footer div.container {
+  footer div.container {
     max-width: 1140px;
     margin: 0 auto;
     overflow: hidden; }
-  section.footer div .footer_contn {
+  footer div .footer_contn {
     display: flex; }
-    section.footer div .footer_contn .footer_left {
+    footer div .footer_contn .footer_left {
       margin-right: 55px; }
-      section.footer div .footer_contn .footer_left img.footer_logo {
+      footer div .footer_contn .footer_left img.footer_logo {
         width: 180px;
         height: 63px;
         margin: 62px 0 0; }
-      section.footer div .footer_contn .footer_left p {
+      footer div .footer_contn .footer_left p {
         margin-top: 32px;
         width: 281px;
         height: 78px;
@@ -375,50 +372,59 @@ section.footer {
         line-height: 26px;
         color: #F8F8F8;
         opacity: 0.85; }
-      section.footer div .footer_contn .footer_left a img.icon {
+      footer div .footer_contn .footer_left a img.icon {
         margin: 34px 18px 0 0; }
-    section.footer div .footer_contn .footer_right {
+    footer div .footer_contn .footer_right {
       width: 855px;
       margin-top: 86px; }
-      section.footer div .footer_contn .footer_right h6.col_one {
+      footer div .footer_contn .footer_right h6.col_one {
         width: 116px;
         height: 30px;
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         color: #85868B; }
-      section.footer div .footer_contn .footer_right h6.col_two {
+      footer div .footer_contn .footer_right h6.col_two {
         height: 30px;
         width: 110px;
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         color: #85868B; }
-      section.footer div .footer_contn .footer_right h6.col_three {
+      footer div .footer_contn .footer_right h6.col_three {
         height: 30px;
         width: 130px;
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         color: #85868B; }
-      section.footer div .footer_contn .footer_right h6.col_four {
+      footer div .footer_contn .footer_right h6.col_four {
         height: 30px;
         width: 110px;
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
-        color: #85868B; }
-      section.footer div .footer_contn .footer_right .coloumn_h {
+        color: #85868B;
+        margin-right: 86px; }
+      footer div .footer_contn .footer_right .coloumn_h {
         display: flex; }
-        section.footer div .footer_contn .footer_right .coloumn_h .heading_col {
+        footer div .footer_contn .footer_right .coloumn_h .heading_col {
           color: #FFFFFF; }
-          section.footer div .footer_contn .footer_right .coloumn_h .heading_col p {
-            width: 188px;
-            margin-top: 10px;
-            font-weight: normal;
-            font-size: 16px;
-            margin-bottom: 9px; }
-            section.footer div .footer_contn .footer_right .coloumn_h .heading_col p span {
-              color: #6EA239; }
+          footer div .footer_contn .footer_right .coloumn_h .heading_col ul {
+            list-style: none;
+            text-decoration: none;
+            padding-top: 24px; }
+            footer div .footer_contn .footer_right .coloumn_h .heading_col ul li {
+              list-style: none;
+              padding-top: 8px; }
+              footer div .footer_contn .footer_right .coloumn_h .heading_col ul li a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px; }
+          footer div .footer_contn .footer_right .coloumn_h .heading_col address {
+            font-style: normal;
+            padding-top: 7px; }
 
 /*# sourceMappingURL=style.css.map */
